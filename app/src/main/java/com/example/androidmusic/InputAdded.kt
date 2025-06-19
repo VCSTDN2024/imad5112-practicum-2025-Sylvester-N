@@ -1,5 +1,6 @@
 package com.example.androidmusic
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -10,23 +11,28 @@ import androidx.core.view.WindowInsetsCompat
 
 class InputAdded : AppCompatActivity() {
 
-    private lateinit var addBtn: Button
+
     private lateinit var reviewBtn: Button
+    private lateinit var homeBtn: Button
     private lateinit var exitBtn: Button
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_input_added)
 
-        addBtn = findViewById(R.id.addBtn)
+
         reviewBtn = findViewById(R.id.reviewBtn)
         exitBtn = findViewById(R.id.exitBtn)
+        homeBtn = findViewById(R.id.homeBtn)
 
-        addBtn.setOnClickListener{
-            val intent = Intent(this, PlaylistActivity::class.java)
+        homeBtn.setOnClickListener{
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
+
+
 
         reviewBtn.setOnClickListener{
             val intent = Intent(this, Details::class.java)

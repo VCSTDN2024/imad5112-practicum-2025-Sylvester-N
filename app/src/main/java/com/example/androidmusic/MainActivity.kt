@@ -15,6 +15,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
          val startBtn = findViewById<Button>(R.id.startBtn)
+        val detailsBtn = findViewById<Button>(R.id.detailsBtn)
+
+        detailsBtn.setOnClickListener {
+            val intent = Intent(this, InputAdded::class.java)
+            startActivity(intent)
+        }
 
         startBtn.setOnClickListener {
             val intent = Intent(this, PlaylistActivity::class.java)

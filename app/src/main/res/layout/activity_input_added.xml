@@ -9,21 +9,6 @@
 
 
     <Button
-        android:id="@+id/addBtn"
-        android:layout_width="192dp"
-        android:layout_height="62dp"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="300dp"
-        android:layout_marginEnd="161dp"
-        android:text="Add Song"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.48"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
         android:id="@+id/reviewBtn"
         android:layout_width="195dp"
         android:layout_height="65dp"
@@ -35,7 +20,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addBtn" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/exitBtn"
@@ -51,6 +36,18 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/reviewBtn" />
+
+    <Button
+        android:id="@+id/homeBtn"
+        android:layout_width="184dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="286dp"
+        android:text="Home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exitBtn" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
